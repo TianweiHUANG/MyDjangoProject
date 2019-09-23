@@ -9,6 +9,6 @@ def cal(request):
 def result(request):
     value_a = request.POST["valueA"]
     value_b = request.POST["valueB"]
-    value_result= int(value_a)+int(value_b)
-    #print(value_a,value_b,value_result)
-    return render(request, "result.html", context={"result":value_result})
+    result= int(value_a)+int(value_b)
+    #print(value_a,value_b,result)
+    return render(request, "result.html", context={"result_resultHTML":result})
