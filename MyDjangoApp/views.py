@@ -11,5 +11,9 @@ def result(request):
     value_b = request.POST["valueB"]
     result= int(value_a)+int(value_b)
     print(value_a,value_b,result)
+
     Tab.objects.create(value_a=value_a,value_b=value_b,result=result)
+    #Tab_list=Tab.objects.all()
+    #print(Tab_list)
+
     return render(request, "result.html", context={"result_resultHTML":result})
