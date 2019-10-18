@@ -1,5 +1,4 @@
-#for...in...
-"""
+#for...in...TEST
 for i in 'exampe199':#字符串
     print(type(i),i)
 for i in ['Monday','Tuesday','Wednesday','Thursday','Friday']:#列表
@@ -9,20 +8,20 @@ for i in ('Tom','Jack','Cherry'):#元组
 for i in {1000,3000,5000,7000,9000,10}:#集合
     print(type(i),i)
 my_dict={"day1":"study","day2":"paly","day3":"sleep",'one':10,'two':20,'three':30,}#字典
-print("---------- ---------- ---------- ---- my_dict ---- ---------- ---------- ----------")
+print("---------- --- my_dict --- ----------")
 for i in my_dict:
     print(type(i), i)
-print("---------- ---------- ----------- my_dict.keys() ----------- ---------- ----------")
+print("---------- my_dict.keys() ----------- ")
 for i in my_dict.keys():
     print(type(i),i)
-print("---------- ---------- ---------- my_dict.values() ---------- ---------- ----------")
+print("---------- my_dict.values() ----------")
 for i in my_dict.values():
     print(type(i),i)
-print("---------- ---------- ----------- my_dict.items() ----------- ---------- ----------")
+print("---------- my_dict.items() -----------")
 for i,j in my_dict.items():
     print(type(i),type(j),i,j)
-"""
 
+"""
 #导入sqlite3
 import sqlite3
 #连接数据库
@@ -52,3 +51,4 @@ cursor.close()
 conn.commit()
 #关闭连接
 conn.close()
+"""
