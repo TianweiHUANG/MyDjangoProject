@@ -20,7 +20,7 @@ def result(request):
 
 def list(request):
     list=Tab.objects.all()
-    # for list in list:
+    # for list in list
     #     print(list.value_a,list.value_b,list.result)
     return render(request, "list.html", context={"list_Html": list} )
 def delete(request):
