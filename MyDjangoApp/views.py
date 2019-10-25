@@ -13,5 +13,4 @@ def result(request):
     print(value_a,value_b,result)
 
     Tab.objects.create(value_a=value_a,value_b=value_b,result=result)
-
     return render(request, "result.html", context={"result_Html":result})

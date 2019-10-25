@@ -4,3 +4,5 @@
 4-.python manage.py runserver
 5-.python manage.py makemigrations
 6-.python manage.py migrate
+
+settings.py -> urls.py -> views.py -> models.py
