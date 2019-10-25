@@ -8,7 +8,8 @@ def index(request):
 def cal(request):
     return render(request,"cal.html")
 def result(request):
-    if request.POST:
+    # if request.POST:
+    if request.method=="POST":
         value_a = request.POST["valueA"]
         value_b = request.POST["valueB"]
         result= int(value_a)+int(value_b)
@@ -22,7 +23,7 @@ def list(request):
     list=Tab.objects.all()
     # for list in list
     #     print(list.value_a,list.value_b,list.result)
-    return render(request, "list.html", context={"list_Html": list} )
+    return render(request, "list.html", context={"list_Html": list})
 def delete(request):
     Tab.objects.all().delete()
     return HttpResponse("List deleted ...")
