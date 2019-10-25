@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>valueA</th>
+        <th>valueB</th>
+        <th>result</th>
+    </tr>
+    </thead>
+    {% for list_Html in list_Html %}
+    <tr>
+        <td>{{ list_Html.value_a }}</td>
+        <td>{{ list_Html.value_b }}</td>
+        <td>{{ list_Html.result }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<form method="POST" action="/delete/">
+    {% csrf_token %}
+    <input type="submit" value="删除">
+</form>
+</body>
+</html>

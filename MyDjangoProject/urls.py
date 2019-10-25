@@ -22,4 +22,6 @@ urlpatterns = [
     path('index/', views.index),
     path('cal/', views.cal),
     path('result/', views.result),
+    path('list/', views.list),
+    path('delete/', views.delete),
 ]
