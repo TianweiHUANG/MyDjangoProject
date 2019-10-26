@@ -27,6 +27,3 @@ def list(request):
 def delete(request):
     Tab.objects.all().delete()
     return HttpResponse("List deleted ...")
-
-
-
